@@ -1,5 +1,5 @@
 # optionaljs
-JavaScript Optional type for functional programming
+JavaScript Optional type for functional programming with Flow
 
 [![version][version-badge]][package]
 [![build][build]][circleci]
