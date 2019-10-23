@@ -9,10 +9,13 @@ JavaScript Optional type for functional programming with Flow
 ## Installation
     npm install --save optionaljs
     
+## Import library
+    import OptionalFactory from 'optionaljs';
+    import type { Optional } from 'optionaljs':
+    
 ## Create Optional type
-
-    makeOptionalOf<T>(value: T | null | void): Optional<T>
-    makeEmptyOptional<T>(): Optional<T>
+    OptionalFactory.makeOptionalOf<T>(value: T | null | void): Optional<T>
+    OptionalFactory.makeEmptyOptional<T>(): Optional<T>
 
 ## Use Optional type
 
