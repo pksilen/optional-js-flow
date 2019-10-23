@@ -1,0 +1,61 @@
+{
+  "name": "optionaljs",
+  "version": "1.5.4",
+  "description": "JavaScript Optional type for functional programming",
+  "keywords": [
+    "optional",
+    "functional"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf ./lib",
+    "flow": "flow ./src",
+    "stop-flow": "flow stop",
+    "build": "babel ./src --out-dir ./lib --source-maps && flow-copy-source ./src ./lib",
+    "prebuild": "npm run clean && npm run flow && npm run test",
+    "test": "jest ./test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pksilen/optionaljs.git"
+  },
+  "author": "Petri Silen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pksilen/optinaljs/issues"
+  },
+  "homepage": "https://github.com/pksilen/optionaljs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.2.2",
+    "eslint-plugin-flowtype": "^4.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.16.0",
+    "flow-bin": "^0.105.2",
+    "flow-copy-source": "^2.0.8",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 0.2%",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "prettier": {
+    "arrowParens": "always",
+    "printWidth": 110,
+    "tabWidth": 2,
+    "singleQuote": true
+  }
+}
