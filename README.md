@@ -1,4 +1,4 @@
-# optionaljs
+# optional-js-flow
 JavaScript Optional type for functional programming with Flow
 
 [![version][version-badge]][package]
@@ -7,11 +7,11 @@ JavaScript Optional type for functional programming with Flow
 [![MIT License][license-badge]][license]
 
 ## Installation
-    npm install --save optionaljs
+    npm install --save optional-js-flow
     
 ## Import library
-    import OptionalFactory from 'optionaljs';
-    import type { Optional } from 'optionaljs':
+    import OptionalFactory from 'optional-js-flow';
+    import type { Optional } from 'optional-js-flow';
     
 ## Create Optional type
     OptionalFactory.makeOptionalOf<T>(value: T | null | void): Optional<T>
@@ -32,8 +32,8 @@ MIT License
 
 [license-badge]: https://img.shields.io/badge/license-MIT-green
 [license]: https://github.com/pksilen/optionaljs/blob/master/LICENSE
-[version-badge]: https://img.shields.io/npm/v/optionaljs.svg?style=flat-square
-[package]: https://www.npmjs.com/package/optionaljs
+[version-badge]: https://img.shields.io/npm/v/optional-js-flow.svg?style=flat-square
+[package]: https://www.npmjs.com/package/optional-js-flow
 [build]: https://img.shields.io/circleci/project/github/pksilen/optionaljs/master.svg?style=flat-square
 [circleci]: https://circleci.com/gh/pksilen/optionaljs/tree/master
 [coverage]: https://img.shields.io/codecov/c/github/pksilen/optionaljs/master.svg?style=flat-square

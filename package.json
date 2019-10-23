@@ -1,10 +1,11 @@
 {
-  "name": "optionaljs",
+  "name": "optional-js-flow",
   "version": "1.5.4",
-  "description": "JavaScript Optional type for functional programming",
+  "description": "JavaScript Optional type for functional programming with Flow",
   "keywords": [
     "optional",
-    "functional"
+    "functional",
+    "flow"
   ],
   "main": "lib/index.js",
   "files": [
