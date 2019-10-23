@@ -1,6 +1,6 @@
 {
   "name": "optional-js-flow",
-  "version": "1.5.4",
+  "version": "1.0.0",
   "description": "JavaScript Optional type for functional programming with Flow",
   "keywords": [
     "optional",
@@ -26,7 +26,7 @@
   "author": "Petri Silen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pksilen/optinaljs/issues"
+    "url": "https://github.com/pksilen/optionaljs/issues"
   },
   "homepage": "https://github.com/pksilen/optionaljs#readme",
   "devDependencies": {
