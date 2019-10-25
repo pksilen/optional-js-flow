@@ -1,6 +1,6 @@
 {
   "name": "optional-js-flow",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript Optional type for functional programming with Flow",
   "keywords": [
     "optional",
