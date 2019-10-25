@@ -10,28 +10,28 @@ export default class OptionalImpl<T> implements Optional<T> {
   }
 
   map<U>(map: (value: T) => U): Optional<U> {
-    if (this.value) {
+    if (this.value !== null && typeof this.value !== 'undefined') {
       return new OptionalImpl(map(this.value));
     }
     return new OptionalImpl();
   }
 
   orElse(elseValue: T): T {
-    return this.value ? this.value : elseValue;
+    return this.value !== null && typeof this.value !== 'undefined' ? this.value : elseValue;
   }
 
   ifPresent(consume: (value: T) => void) {
-    if (this.value) {
+    if (this.value !== null && typeof this.value !== 'undefined') {
       consume(this.value);
     }
   }
 
-  orElseSupplyValue(supplyElseValue: () => T): T {
-    return this.value ? this.value : supplyElseValue();
+  orElseGet(getElseValue: () => T): T {
+    return this.value !== null && typeof this.value !== 'undefined' ? this.value : getElseValue();
   }
 
   ifPresentOrElse(consume: (value: T) => void, performAction: () => void) {
-    if (this.value) {
+    if (this.value !== null && typeof this.value !== 'undefined') {
       consume(this.value);
     } else {
       performAction();
@@ -39,10 +39,12 @@ export default class OptionalImpl<T> implements Optional<T> {
   }
 
   filter(isTrue: (value: T) => boolean): Optional<T> {
-    return this.value && isTrue(this.value) ? new OptionalImpl(this.value) : new OptionalImpl();
+    return this.value !== null && typeof this.value !== 'undefined' && isTrue(this.value)
+      ? new OptionalImpl(this.value)
+      : new OptionalImpl();
   }
 
   flatMap<U>(map: (value: T) => Optional<U>): Optional<U> {
-    return this.value ? map(this.value) : new OptionalImpl();
+    return this.value !== null && typeof this.value !== 'undefined' ? map(this.value) : new OptionalImpl();
   }
 }
