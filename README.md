@@ -31,10 +31,10 @@ JavaScript Optional type for functional programming with Flow
 MIT License
 
 [license-badge]: https://img.shields.io/badge/license-MIT-green
-[license]: https://github.com/pksilen/optionaljs/blob/master/LICENSE
+[license]: https://github.com/pksilen/optional-js-flow/blob/master/LICENSE
 [version-badge]: https://img.shields.io/npm/v/optional-js-flow.svg?style=flat-square
 [package]: https://www.npmjs.com/package/optional-js-flow
-[build]: https://img.shields.io/circleci/project/github/pksilen/optionaljs/master.svg?style=flat-square
-[circleci]: https://circleci.com/gh/pksilen/optionaljs/tree/master
-[coverage]: https://img.shields.io/codecov/c/github/pksilen/optionaljs/master.svg?style=flat-square
-[codecov]: https://codecov.io/gh/pksilen/optionaljs
+[build]: https://img.shields.io/circleci/project/github/pksilen/optional-js-flow/master.svg?style=flat-square
+[circleci]: https://circleci.com/gh/pksilen/optional-j-flows/tree/master
+[coverage]: https://img.shields.io/codecov/c/github/pksilen/optional-js-flow/master.svg?style=flat-square
+[codecov]: https://codecov.io/gh/pksilen/optional-js-flow
